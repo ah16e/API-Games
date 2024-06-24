@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="icon" href="icon/controller.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<section class="games">
+    <header>
+        <img src="imge/wraper (1).png" class="w-100" alt="games">
+    </header>
+    <nav class="navbar container navbar-expand-lg nav-bg position-sticky top-0 z-3 w-100 col-md-6 col-lg-9">
+        <div class="container">
+            <h5 class="navbar">
+                <img src="imge/logo-sm.png" style="max-width: 40px;" alt="logo">
+                Game Reviews
+            </h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 menu small">
+                    <li class="nav-item">
+                       <a role="button" class="nav-link active text-uppercase" aria-current="page" data-category="mmorpg">mmorpg</a>
+                    </li>
+                    <li class="nav-item">
+                       <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                    </li>
+                    <li class="nav-item">
+                       <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                    </li>
+                    <li class="nav-item">
+                       <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                       <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                    </li>
+                    <li class="nav-item">
+                       <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                    </li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5 home">
+        <section class="position-relative">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+        </section>
+    </main>
+</section>
+
+<section class="details d-none">
+    <div class="container">
+        <header class="hstack justify-content-between">
+            <h1 class="text-center h3 py-4">Details Game</h1>
+            <button class="btn-close btn-close-white" id="btnClose"></button>
+        </header>
+        <div class="row g-4" id="detailsContent">
+            <div class="col-md-4">
+                <img src="imge/thumbnail (4).jpg" class="w-100" alt="imge Details">
+            </div>
+            <div class="col-md-8">
+                <h3 class="text1">Title: Sphere 3: Enchanted world</h3>
+                <p>Category:
+                    <span class="badge text-bg-info">MMORPG</span>
+                </p>
+                <p>Platform: 
+                    <span class="badge text-bg-info">Windows</span>
+                </p>
+                <p>Status: 
+                    <span  class="badge text-bg-info">Live</span>
+                </p>
+                <p class="small">
+                    Sphere III: Enchanted World is a 3D fantasy action MMORPG that was published by Nikita Online. Use the game’s unique non-target combat system and participate in the PvP that is a strong focus in Sphere III.
+
+                    As you play Sphere III you will quickly learn that the combat does not auto-aim for you. You will have to manually aim your attacks using the color-coded crosshairs on your screen to determine the best skills to use against your enemies. This is particularly difficult when you are participating in the PvP servers where player’s will move much more erratically than an AI opponent. Careful killing to many players though, the game’s Karma System will make you lose gold and even items if you get killed and have a low Karma.
+
+                    Once you get bored with the thousands of quests that Sphere III offers you may decide to start participating in Castle Sieges. Castle Sieges offer you the chance to take over castle and make them your own. If you end up controlling at castle this is the best way to earn some of the greatest items in Sphere III.
+
+                    Sphere III: Enchanted World features a great non-target combat system that provides freedom of aiming, dynamically calculates the damage and allows a player to quickly pick an optimum attacking ability, offering players something to develop their skills with. You can also participate in Castle Sieges to earn the best items in the game and make your Karma go up or down while participating in the PvP.
+                </p>
+                <a class="btn btn-outline-warning" target="_blank" href="https://www.freetogame.com/open/sphere-3">Show Game</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+
+</body>
+</html>
